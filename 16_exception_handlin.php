@@ -1,6 +1,5 @@
 <?php
 
-
 try {
 
     $db_name = "mysql:host=localhost;
@@ -10,7 +9,7 @@ try {
 
     $con = new PDO($db_name, $username, 
     $password);
-    
+
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

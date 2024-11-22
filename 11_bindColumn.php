@@ -2,7 +2,8 @@
 
 include '01_connect.php';
 
-$con->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+$con->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, 
+PDO::FETCH_ASSOC);
 
 // $place = 'souza';
 // $fetch_records = $con->prepare("SELECT * FROM
