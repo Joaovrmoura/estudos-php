@@ -1,24 +1,21 @@
 <?php
+    session_start();
     require './database/class.php';
     $all_contacts = ContatoInfo::get_all_Contact($conn);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST['edit'])){
              $_SESSION['id'] = $_POST['id'];
-            header('location: ./actions/edit.php');
+            header('location: actions/edit.php');
         } elseif (isset($_POST['delete'])){
             $id = $_POST['id'];
             $delete = ContatoInfo::delete_contact($conn, $id);
-            header('location: contacts.php');
+            header('location: home.php');
     
         } elseif (isset($_POST['add'])) {
             header('location: ./actions/add.php');
         }
-        } elseif (isset($_POST['addContact'])) {
-            header('location: add.php');
-        }
-    
-    
+    }
 ?>
 
 <!DOCTYPE html>
@@ -125,7 +122,7 @@
                 <td><?= $contact->email ?></td>
                 <td><?= $contact->phone ?></td>
                 <td><?= $contact->address ?></td>
-                <form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
+                <form action="<?= ROOT_URL ?>home.php" method="POST">
                     <input type="hidden" name="id" value="<?= $contact->id ?>">
                     <td><button type="submit" name="edit">Editar</button></td>
                     <td><button type="submit" name="add">Adicionar</button></td>

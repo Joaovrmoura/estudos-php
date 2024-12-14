@@ -1,8 +1,9 @@
 <?php
 
 require "conn.php";
-$conn = Connection::Getconn();
 
+$conn = Connection::Getconn();
+$rotas = Connection::rotas($conn);
 class ContatoInfo{
 
     private $id, $name, $email, $address, $phone;
@@ -51,7 +52,6 @@ class ContatoInfo{
 }
 
 class IdSearch extends ContatoInfo{
-    
     public static function search($conn, $id){
         $query = $conn->prepare("SELECT * FROM contacts WHERE id=?");
         $query->bindParam(1, $id);

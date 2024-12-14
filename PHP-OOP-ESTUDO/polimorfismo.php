@@ -4,8 +4,6 @@
 // reescrever um método herdado 
 // da classe pai/SuperClasse
 
-
-
 class Animal{
     public function andar(){
         echo "O animal andou";

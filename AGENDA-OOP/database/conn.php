@@ -1,7 +1,8 @@
 <?php
 
 class Connection{
-    private static $host="mysql:host=localhost;dbname=agenda_contatos";
+    private static $host="mysql:host=localhost;
+    dbname=agenda_contatos";
     private static $user="root";
     private static $pass='';
     private static $connection = null;
@@ -21,6 +22,12 @@ class Connection{
             }
         }
         return self::$connection;
+    }
+
+    public static function rotas($conn){
+        return define(
+        'ROOT_URL', 
+        'http://localhost/PDO-treino/OOP-PHP/AGENDA_CONTATOS/');
     }
     private function __construct() {}
     private function __clone() {}
