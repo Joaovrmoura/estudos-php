@@ -118,7 +118,7 @@ body {
     list-style: none;
 }
 
-.mostrarTarefa li:hover {
+.active:hover {
     background-color: #575279;
     transition: all ease 0.7s;
 }
