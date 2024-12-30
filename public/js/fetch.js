@@ -31,7 +31,6 @@ function Task() {
             let formData = new FormData(this.form);
             xhr.send(formData);
         };
-
     }
     this.loadaTask = () => {
         setInterval(() => {
