@@ -14,7 +14,7 @@ Estrutura do Repositório
 Diretório destinado a exercícios de fixação e aprendizado.
 Contém soluções de problemas comuns utilizando PHP.
 
-2. MINI-PROJETOS
+3. MINI-PROJETOS
 Reúne projetos menores para aplicação dos conceitos aprendidos.
 Inclui:
 LISTA_TAREFAS PHP + JS : Uma aplicação para gerenciamento de tarefas que
@@ -29,11 +29,12 @@ operações básicas de CRUD (inserção, atualização, listagem e exclusão).
 Exemplos e práticas utilizando PDO (PHP Data Objects) para conexão e manipulação
 de bancos de dados.
 
-6. PHP-OOP-ESTUDO
+5. PHP-OOP-ESTUDO
 Conteúdo focado na Programação Orientada a Objetos com PHP.
 Inclui conceitos, exercícios e aplicações práticas.
 
 Objetivo
+==
 O objetivo deste repositório é facilitar o aprendizado e 
 consolidar conhecimentos na linguagem PHP, abrangendo aspectos 
 fundamentais e avançados, bem como aplicar 
@@ -45,6 +46,5 @@ sinta-se à vontade para abrir um Pull Request ou registrar uma Issue.
 
 Autor
 Vtwave
-=
 repositório principal para centralizar todos os 
 estudos e projetos em um único local organizado.
