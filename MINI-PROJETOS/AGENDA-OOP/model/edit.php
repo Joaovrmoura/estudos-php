@@ -21,7 +21,8 @@ if(isset($_SESSION['id'])){
         $email, 
         $address, 
         $phone);
-        $_SESSION['success'] = 'Usuario edotado com sucesso';
+        $_SESSION['success'] = 
+        'Usuario edotado com sucesso';
         header('location:../home.php');
         exit();
     }
