@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['tarefa'])) {
     // Obtém os dados do corpo da requisição
         $tarefa = $_POST['tarefa'];
         try{
-            // Exemplo de lógica para salvar no banco (ajuste conforme sua estrutura)
+            
             $stmt = $pdo->prepare("INSERT INTO lista (tarefa) VALUES (:tarefa)");
             $stmt->execute([':tarefa' => $tarefa]);
             $message = trim(" Adicionado com sucesso! "); // Remove espaços extras
