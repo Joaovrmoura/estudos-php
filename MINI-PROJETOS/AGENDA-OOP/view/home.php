@@ -1,6 +1,7 @@
 <?php
     session_start();
-    require './database/class.php';
+    require '../model/class.php';
+    
     $all_contacts = ContatoInfo::get_all_Contact($conn);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {

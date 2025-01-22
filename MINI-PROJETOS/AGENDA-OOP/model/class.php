@@ -1,6 +1,6 @@
 <?php
 
-require "conn.php";
+require "../config/conn.php";
 
 $conn = Connection::Getconn();
 $rotas = Connection::rotas($conn);
