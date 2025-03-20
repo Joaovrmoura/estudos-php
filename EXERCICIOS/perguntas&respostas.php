@@ -27,6 +27,8 @@ $perguntas = [
         'Resposta' => '5',
     ],
 ];
+
+
 $countAcertos = 1;
 foreach ($perguntas as $pergunta) {
     echo $pergunta['Pergunta'];
