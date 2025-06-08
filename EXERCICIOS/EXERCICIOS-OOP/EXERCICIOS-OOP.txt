@@ -2,7 +2,8 @@ PHP-POO
 Resolução de exercícios de Orientação à Objetos.
 
 
-Exercício 01: Crie uma classe chamada Invoice que possa ser utilizado por uma loja de suprimentos de informática para representar uma fatura de um item vendido na loja. 
+Exercício 01: Crie uma classe chamada Invoice que possa ser utilizado por uma loja de 
+suprimentos de informática para representar uma fatura de um item vendido na loja. 
 Uma fatura deve incluir as seguintes informações como atributos
 
 número do item faturado,
@@ -24,10 +25,11 @@ Sua classe deve ter um construtor que inicializa os três atributos. Forneça um
 configure-o como 0.0. Crie um método que exibe o salário anual e um que dê 10% de aumento no salário. >>IR PARA O CÓDIGO<<
 
 Exercício 03: Escreva uma classe Contador, que encapsule um valor usado para contagem de itens ou eventos. A classe deve oferecer métodos que devem:
-
 Zerar;
 Incrementar;
 Retornar o valor do contador. >>IR PARA O CÓDIGO<<
+
+
 Exercício 04: Escreva uma classe Ponto2D que represente um ponto no plano cartensiano. Além dos atributos por você identificados, 
 a classe deve oferecer os seguintes membros:
 
@@ -50,6 +52,9 @@ Sua classe deve ter um construtor que inicializa os três atributos e verifica a
 Forneça um método set um get para cada atributo.
 Forneça o método date para retornar uma representação da data. Considere que a data deve ser formatada mostrando o dia, o mês e o ano separados por barra (/).
 Forneça uma operação para avançar uma data para o dia seguinte. >>IR PARA O CÓDIGO<<
+
+
+
 Exercício 07 Traduza o seguinte conjunto de classes em um programa PHP.
 
 a) Classe: Porta - Atributos: aberta, cor, dimensaoX, dimensaoY, dimensaoZ Métodos: void abre(), void fecha(), void pinta(String s).
